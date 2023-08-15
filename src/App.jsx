@@ -5,6 +5,8 @@ import SolutionSection from './components/SolutionSection';
 import SmartSave from './components/SmartSave.jsx';
 import CostSaver from './components/CostSaverSection';
 import Steps from './components/Steps';
+import Testimonials from './components/Testimonials';
+import GetStarted from './components/GetStarted';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <SmartSave />
         <CostSaver />
         <Steps />
+        <Testimonials />
+        <GetStarted />
       </main>
       <Footer />
     </>
