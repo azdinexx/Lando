@@ -1,27 +1,22 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import SolutionSection from './components/SolutionSection';
-import SmartSave from './components/SmartSave.jsx';
-import CostSaver from './components/CostSaverSection';
-import Steps from './components/Steps';
-import Testimonials from './components/Testimonials';
-import GetStarted from './components/GetStarted';
-
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import RootLayout from './layout/RootLayout.jsx';
+import Pricing from './pages/Pricing';
 function App() {
   return (
     <>
-      <Header />
-      <main className='max-w-6xl mx-auto'>
-        <Hero />
-        <SolutionSection />
-        <SmartSave />
-        <CostSaver />
-        <Steps />
-        <Testimonials />
-        <GetStarted />
-      </main>
-      <Footer />
+      <Routes>
+        <Route path='/'>
+          <Route element={<RootLayout />}>
+            <Route index element={<Home />} />
+            <Route path='about-us' element={<AboutUs />} />
+            <Route path='contact' element={<ContactUs />} />
+            <Route path='pricing' element={<Pricing />} />
+          </Route>
+        </Route>
+      </Routes>
     </>
   );
 }
