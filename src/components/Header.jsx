@@ -28,7 +28,9 @@ function Header() {
     <header className='max-w-6xl py-6 mx-auto flex justify-between items-center'>
       <div className='flex gap-20 items-center'>
         {/* LOGO */}
-        <h1 className='text-3xl font-bold'>Lando</h1>
+        <Link to={'/'}>
+          <h1 className='text-3xl font-bold'>Lando</h1>
+        </Link>
         {/* NAV */}
         <nav>
           <ul className='flex gap-10'>
