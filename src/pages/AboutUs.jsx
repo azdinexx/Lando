@@ -1,39 +1,43 @@
 import aboutusImg from '../assets/aboutus.png';
 import heroimg from '../assets/hero.png';
 import man from '../assets/team/man.jpeg';
+import GetStarted from '../components/GetStarted';
 
 function AboutUs() {
   return (
-    <div className='flex flex-col gap-6 mt-20 items-center'>
-      <h1 className='text-5xl text-center '>About Us</h1>
-      <p className='max-w-sm text-center mx-auto text-gray-600'>
-        we offer revolutionary solution to industry problems. Join Lando
-        Community and experience the benefits of company optimization today!
-      </p>
-      <img src={aboutusImg} alt='' width={650} />
-      <span className='text-5xl text-center '>Our Mission</span>
-      <p className='max-w-xl text-center mx-auto text-gray-600 pb-20 border-b border-stone-300 mb-10'>
-        At Lando, we are commited to providing excellent services to our
-        customers and clients and to help them achieve the best outcomes. We
-        believe that we can make a positive impact on our community, industry
-        and the world. Our Lando team is dedicated to providing the best
-        possible service and support, and we are always looking for ways to
-        improve and innovate.
-      </p>
-      <div className='flex w-[60rem] justify-center items-center  mb-10'>
-        <p className='flex flex-col text-4xl font-semibold w-1/2 pl-20 gap-2'>
-          <span>Let&apos;s start </span>
-          <span>working </span>
-          <span>more </span>
-          <span>efficiently</span>
-          <span>today!</span>
+    <>
+      <div className='flex flex-col gap-6 my-20 items-center'>
+        <h1 className='text-5xl text-center '>About Us</h1>
+        <p className='max-w-sm text-center mx-auto text-gray-600'>
+          we offer revolutionary solution to industry problems. Join Lando
+          Community and experience the benefits of company optimization today!
         </p>
-        <div className='w-1/2 flex items-center justify-center'>
-          <img src={heroimg} alt='' width={300} />
+        <img src={aboutusImg} alt='' width={650} />
+        <span className='text-5xl text-center '>Our Mission</span>
+        <p className='max-w-xl text-center mx-auto text-gray-600 pb-20 border-b border-stone-300 mb-10'>
+          At Lando, we are commited to providing excellent services to our
+          customers and clients and to help them achieve the best outcomes. We
+          believe that we can make a positive impact on our community, industry
+          and the world. Our Lando team is dedicated to providing the best
+          possible service and support, and we are always looking for ways to
+          improve and innovate.
+        </p>
+        <div className='flex w-[60rem] justify-center items-center  mb-10'>
+          <p className='flex flex-col text-4xl font-semibold w-1/2 pl-20 gap-2'>
+            <span>Let&apos;s start </span>
+            <span>working </span>
+            <span>more </span>
+            <span>efficiently</span>
+            <span>today!</span>
+          </p>
+          <div className='w-1/2 flex items-center justify-center'>
+            <img src={heroimg} alt='' width={300} />
+          </div>
         </div>
+        <Team />
       </div>
-      <Team />
-    </div>
+      <GetStarted />
+    </>
   );
 }
 
