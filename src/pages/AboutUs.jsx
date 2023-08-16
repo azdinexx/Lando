@@ -6,7 +6,7 @@ import GetStarted from '../components/GetStarted';
 function AboutUs() {
   return (
     <>
-      <div className='flex flex-col gap-6 my-20 items-center'>
+      <div className='flex flex-col gap-6 md:my-20 items-center'>
         <h1 className='text-5xl text-center '>About Us</h1>
         <p className='max-w-sm text-center mx-auto text-gray-600'>
           we offer revolutionary solution to industry problems. Join Lando
@@ -22,8 +22,8 @@ function AboutUs() {
           possible service and support, and we are always looking for ways to
           improve and innovate.
         </p>
-        <div className='flex w-[60rem] justify-center items-center  mb-10'>
-          <p className='flex flex-col text-4xl font-semibold w-1/2 pl-20 gap-2'>
+        <div className='flex md:w-[60rem] justify-center items-center  mb-10'>
+          <p className='flex flex-col text-4xl font-semibold w-1/2 md:pl-20 gap-2'>
             <span>Let&apos;s start </span>
             <span>working </span>
             <span>more </span>
@@ -45,14 +45,12 @@ export default AboutUs;
 
 function Team() {
   return (
-    <>
+    <div className='  flex flex-col gap-6'>
       <h1 className='text-5xl text-center '>Team</h1>
       <p className='max-w-sm text-center mx-auto text-gray-600'>
         Meet the people behind the magical product
       </p>
-      <div className='grid grid-cols-4 grid-rows-2 gap-10  w-[700px] my-4'>
-        <Person />
-        <Person />
+      <div className='grid md:grid-cols-4 grid-cols-3   md:grid-rows-2 gap-10  md:w-[700px] my-4'>
         <Person />
         <Person />
         <Person />
@@ -60,7 +58,7 @@ function Team() {
         <Person />
         <Person />
       </div>
-    </>
+    </div>
   );
 }
 

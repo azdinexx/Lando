@@ -20,7 +20,7 @@ export default Pricing;
 
 function Cards() {
   return (
-    <div className='grid grid-cols-3 w-[80%]'>
+    <div className='grid md:grid-cols-3 grid-cols-1 w-[80%]'>
       <div className='bg-white p-10 rounded-2xl flex flex-col shadow-xl'>
         <span
           className='uppercase text-xs mb-5
@@ -40,7 +40,7 @@ function Cards() {
           Get Started With Basic
         </button>
       </div>
-      <div className='bg-white relative shadow-xl p-10 rounded-2xl scale-110 flex flex-col'>
+      <div className='bg-white relative border shadow-xl p-10 rounded-2xl scale-110 flex flex-col'>
         <span className='bg-blue-500 text-xs text-white absolute top-5 rounded-2xl px-4 py-1 right-5'>
           Most Popular
         </span>
@@ -81,14 +81,16 @@ function CompareFeatures() {
       <span className='text-2xl font-bold w-full text-start'>
         Compare Features
       </span>
-      <div className=' grid grid-cols-3 text-2xl py-10 border-b border-gray-300'>
+      <div className='hidden md:grid grid-cols-3 text-2xl py-10 border-b border-gray-300'>
         <span>Basic</span>
         <span>Pro</span>
         <span>Business</span>
       </div>
-      <div className=' grid grid-cols-3 text-gray-800 py-5 '>
+      <div className=' grid grid-cols-1 gap-2 md:grid-cols-3 text-gray-800 py-5 '>
         {/* BASIC */}
         <ul>
+          <span className='text-2xl  border-b border-gray-300'>Basic</span>
+
           <Feature>process analysis</Feature>
           <Feature>task Management</Feature>
           <Feature>time tracking </Feature>
@@ -99,6 +101,8 @@ function CompareFeatures() {
 
         {/* PRO */}
         <ul>
+          <span className='text-2xl  border-b border-gray-300'>Pro</span>
+
           <Feature>process analysis</Feature>
           <Feature>task Management</Feature>
           <Feature>time tracking </Feature>
@@ -111,6 +115,8 @@ function CompareFeatures() {
 
         {/* BUSINESS */}
         <ul>
+          <span className='text-2xl  border-b border-gray-300 '>Business</span>
+
           <Feature>process analysis</Feature>
           <Feature>task Management</Feature>
           <Feature>time tracking </Feature>
