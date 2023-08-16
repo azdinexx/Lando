@@ -26,7 +26,7 @@ function Header() {
   }, [navigate]);
 
   return (
-    <header className='relative px-4 md:px-0 max-w-6xl py-6 mx-auto flex justify-between items-center'>
+    <header className='relative px-4 md:px-0 md:max-w-6xl py-6 mx-auto flex justify-between items-center'>
       <div className='flex gap-20 items-center'>
         {/* LOGO */}
         <div className='flex gap-2'>

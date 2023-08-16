@@ -2,11 +2,11 @@ import img from '../assets/SolutionSection.png';
 
 function SolutionSection() {
   return (
-    <div className=' my-36  md:min-h-screen flex justify-center items-center relative'>
-      <div className='hidden md:block absolute z-[1]  bg-white h-[24rem] w-[96%] bottom-[7.2rem]  rounded-2xl shadow-lg'></div>
+    <div className=' my-48  flex justify-center items-center relative'>
+      <div className='hidden md:block absolute z-[1]  bg-white h-[14rem] w-[96%] -bottom-4  rounded-2xl shadow-lg'></div>
 
-      <div className='w-full bg-white rounded-2xl h-[24rem] grid md:grid-cols-2 grid-cols-1 grid-rows-1 shadow-xl z-10 '>
-        <div className='flex flex-col gap-6 justify-center pl-10'>
+      <div className='w-full bg-white rounded-2xl grid md:grid-cols-2 grid-cols-1 grid-rows-1 shadow-xl z-10 '>
+        <div className='flex flex-col gap-6 justify-center px-6 py-8 md:pl-10'>
           <h3 className='text-5xl capitalize max-w-xs '>
             introducing new solution
           </h3>
@@ -21,7 +21,7 @@ function SolutionSection() {
           <img
             src={img}
             alt=''
-            className='absolute md:bottom-6 -bottom-6 -right-10 w-[18rem] md:w-auto '
+            className='absolute md:bottom-4 -bottom-16 -right-10 w-[18rem] md:w-auto '
           />
         </div>
       </div>
