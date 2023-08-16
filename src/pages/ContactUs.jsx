@@ -1,9 +1,9 @@
 import img from '../assets/CostSaver.png';
 function ContactUs() {
   return (
-    <div className='grid grid-cols-2 grid-rows-1 mb-36 mt-20'>
-      <div>
-        <img src={img} alt='' />
+    <div className='grid place-items-center md:grid-cols-2 grid-cols-1 md:grid-rows-1 mb-36 mt-20'>
+      <div className='mb-10'>
+        <img src={img} alt='' width={500} className='w-48 md:w-auto' />
       </div>
       <div>
         <h1 className='text-4xl font-bold'>Contact Us</h1>

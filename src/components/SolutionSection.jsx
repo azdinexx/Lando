@@ -2,7 +2,7 @@ import img from '../assets/SolutionSection.png';
 
 function SolutionSection() {
   return (
-    <div className='my-10 md:m-0 md:min-h-screen flex justify-center items-center relative'>
+    <div className=' my-36  md:min-h-screen flex justify-center items-center relative'>
       <div className='hidden md:block absolute z-[1]  bg-white h-[24rem] w-[96%] bottom-[7.2rem]  rounded-2xl shadow-lg'></div>
 
       <div className='w-full bg-white rounded-2xl h-[24rem] grid md:grid-cols-2 grid-cols-1 grid-rows-1 shadow-xl z-10 '>
@@ -17,8 +17,12 @@ function SolutionSection() {
             try it for free
           </button>
         </div>
-        <div className='relative hidden md:block'>
-          <img src={img} alt='' className='absolute bottom-6' />
+        <div className='relative   md:block'>
+          <img
+            src={img}
+            alt=''
+            className='absolute md:bottom-6 -bottom-6 -right-10 w-[18rem] md:w-auto '
+          />
         </div>
       </div>
     </div>

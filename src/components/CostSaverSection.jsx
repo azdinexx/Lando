@@ -4,7 +4,7 @@ function CostSaver() {
   return (
     <section className='md:min-h-screen flex items-center justify-center'>
       <div className='grid md:grid-cols-2 grid-cols-1  grid-rows-1  gap-10 w-full'>
-        <article className='flex flex-col gap-6 pl-10'>
+        <article className='flex flex-col gap-6 md:pl-10'>
           <span className='uppercase text-stone-600'>Cost Save</span>
           <h5 className='text-4xl leading-20  max-w-sm '>
             Cost Saving in a smart way

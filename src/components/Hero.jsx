@@ -29,14 +29,14 @@ function Hero() {
         </div>
       </div>
       <div className='mb-20'>
-        <p className='max-w-sm mx-auto text-center font-thin '>
+        <p className='max-w-sm mx-auto text-center font-thin text-2xl '>
           trusted by individuals and teams at the world&apos;s best companies
         </p>
         <div className='flex gap-8 justify-center py-5 '>
-          <span className='text-xl font-bold text-stone-400  '>logo</span>
-          <span className='text-xl font-bold text-stone-400  '>logo</span>
-          <span className='text-xl font-bold text-stone-400  '>logo</span>
-          <span className='text-xl font-bold text-stone-400  '>logo</span>
+          <span className='text-3xl font-bold text-stone-400  '>logo</span>
+          <span className='text-3xl font-bold text-stone-400  '>logo</span>
+          <span className='text-3xl font-bold text-stone-400  '>logo</span>
+          <span className='text-3xl font-bold text-stone-400  '>logo</span>
         </div>
       </div>
     </>
