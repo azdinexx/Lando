@@ -1,16 +1,16 @@
 function Footer() {
   return (
-    <footer className='border-t border-gray-300   py-6 mb-20 pt-10'>
-      <div className='max-w-6xl mx-auto flex gap-36'>
+    <footer className='border-t border-gray-300   py-6 mb-6 md:mb-20 pt-10'>
+      <div className='max-w-6xl mx-auto flex gap-36 items-center md:items-start justify-center'>
         {/* LOGO */}
-        <div className='max-w-[10rem]'>
+        <div className='md:max-w-[10rem]'>
           <h1 className='text-2xl font-bold'>Lando</h1>
           <span className='font-thin text-stone-700'>
             2023 &copy; Lando All Rights Reserved
           </span>
         </div>
         {/* NAV */}
-        <nav className='flex gap-[5rem] w-full font-thin'>
+        <nav className='hidden md:flex gap-[5rem] w-full font-thin'>
           <ul className='flex flex-col gap-5  '>
             <li>Home</li>
             <li>Pricing</li>

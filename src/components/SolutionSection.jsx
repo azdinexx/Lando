@@ -2,10 +2,10 @@ import img from '../assets/SolutionSection.png';
 
 function SolutionSection() {
   return (
-    <div className='min-h-screen flex justify-center items-center relative'>
-      <div className='absolute z-[1]  bg-white h-[24rem] w-[96%] bottom-[7.2rem]  rounded-2xl shadow-lg'></div>
+    <div className='my-10 md:m-0 md:min-h-screen flex justify-center items-center relative'>
+      <div className='hidden md:block absolute z-[1]  bg-white h-[24rem] w-[96%] bottom-[7.2rem]  rounded-2xl shadow-lg'></div>
 
-      <div className='w-full bg-white rounded-2xl h-[24rem] grid grid-cols-2 grid-rows-1 shadow-xl z-10 '>
+      <div className='w-full bg-white rounded-2xl h-[24rem] grid md:grid-cols-2 grid-cols-1 grid-rows-1 shadow-xl z-10 '>
         <div className='flex flex-col gap-6 justify-center pl-10'>
           <h3 className='text-5xl capitalize max-w-xs '>
             introducing new solution
@@ -17,7 +17,7 @@ function SolutionSection() {
             try it for free
           </button>
         </div>
-        <div className='relative'>
+        <div className='relative hidden md:block'>
           <img src={img} alt='' className='absolute bottom-6' />
         </div>
       </div>

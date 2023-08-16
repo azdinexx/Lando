@@ -6,7 +6,7 @@ function Testimonials() {
         <p className='text-center text-stone-500'>
           People love what we do, and we want to let you know
         </p>
-        <div className='flex justify-center gap-10'>
+        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
           <Card
             quote={'I recommend Lando for any business looking for improvement'}
             name={'John Doe'}

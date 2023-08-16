@@ -3,7 +3,7 @@ import img from '../assets/smartsave.png';
 function SmartSave() {
   return (
     <section className='min-h-[90vh] flex items-center justify-center'>
-      <div className='grid grid-cols-2 grid-rows-1 gap-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 gap-10'>
         <div className=' '>
           <img src={img} alt='' width={600} />
         </div>

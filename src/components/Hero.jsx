@@ -3,7 +3,7 @@ import img from '../assets/hero.png';
 function Hero() {
   return (
     <>
-      <div className='grid min-h-screen grid-cols-2 grid-rows-1'>
+      <div className='px-4  md:px-0 grid min-h-screen grid-cols-1 md:grid-cols-2 md:grid-rows- grid-rows-'>
         {/* Call To Action */}
         <div className='flex justify-center flex-col'>
           <span className='text-stone-400 py-4'>FREE 30 DAYS TRIAL</span>
@@ -24,7 +24,7 @@ function Hero() {
         </div>
 
         {/* Image */}
-        <div className='flex items-center justify-center'>
+        <div className=' flex items-center justify-center '>
           <img src={img} alt='' width={430} />
         </div>
       </div>
