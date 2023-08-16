@@ -19,6 +19,12 @@ function Header() {
       case '/contact':
         setIndex(3);
         break;
+      case '/login':
+        setIndex(4);
+        break;
+      case '/signup':
+        setIndex(5);
+        break;
       default:
         setIndex(0);
         break;
@@ -65,12 +71,16 @@ function Header() {
       </div>
       {/* Login and Sign up features */}
       <div className='flex gap-4'>
-        <button className='px-5 py-2 text-[#3164f5] -white rounded-md '>
-          Log In
-        </button>
-        <button className='px-5 py-2 bg-[#3164f5] text-white rounded-md '>
-          Sign Up
-        </button>
+        <Link to={'/login'}>
+          <button className='px-5 py-2 text-[#3164f5] -white rounded-md '>
+            Log In
+          </button>
+        </Link>
+        <Link to={'/signup'}>
+          <button className='px-5 py-2 bg-[#3164f5] text-white rounded-md '>
+            Sign Up
+          </button>
+        </Link>
       </div>
     </header>
   );
